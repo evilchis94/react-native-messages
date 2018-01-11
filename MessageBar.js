@@ -62,7 +62,7 @@ export default class MessageBar extends Component {
       ).start(
         () => {
           if (message === this.state.message) {
-            this.setState({ message: null });
+            this.setState({ message: null});
           }
         },
       );
@@ -87,7 +87,7 @@ export default class MessageBar extends Component {
         ]}
       >
         {this.state.message &&
-          <MessageComponent message={this.state.message.message}/>
+          <MessageComponent message={this.state.message.message} type={this.state.message.type}/>
         }
       </Animated.View>
     );
